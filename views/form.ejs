@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include("header") %>
+
+    <form action = "/add-product" method ="post">
+        <div>
+            <label for = "name">Name</label>
+            <input type = "text" id = "name" name = "name">
+        </div>
+        <div>
+            <label for = "price">Price</label>
+            <input type = "number" id = "price" name = "price">
+            <select name = "store_id">
+                <option value = "">select</option>
+                <option value = "3">Berkah Selalu </option>
+                <option value = "4">Maju Jaya</option>
+                <option value = "5">Jaya Makmur</option>
+            </select>
+
+        </div>
+
+        <button type = "submit">Save</button>
+
+    </form>
+
+    <%- include("footer") %>
+
+</body>
+</html>
